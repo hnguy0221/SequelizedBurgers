@@ -1,0 +1,15 @@
+.app-container
+{
+    background-image: url("../images/wood_pattern.png");
+    width: 100%;
+    margin-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-right: 0%;
+    border: 2px solid black;
+}
+
+h1
+{
+    color: red;
+}

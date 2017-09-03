@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes)
     });
 
     Customer.associate = function(models) {
-        // Associating Customer with burgers
+        // Associating Customer with Burgers
         // When a Customer is deleted, also delete any associated Burgers
         Customer.hasMany(models.Burger, {
             onDelete: "cascade"

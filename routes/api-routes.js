@@ -22,7 +22,8 @@ module.exports = function(app) {
         });
     });
 
-    // PUT route for updating burger. We can get the updated burger data from req.body
+    // PUT route for updating burger. We can get the updated burger 
+    // and customer data from req.body
     app.put("/burgers/update", function(req, res) 
     {
         var customer_name = req.body.customer_name.trim();
@@ -32,12 +33,12 @@ module.exports = function(app) {
         var eatenStr = burger_name + " (Eaten by " + customer_name + ")";
         console.log("eatenStr: '" + eatenStr + ";");
 
-        //if the customer's name is empty or blank, the return.
+        //if the customer's name is empty or blank, refresh the page.
         if (customer_name === "") {
             res.redirect("/");
         }
         //check to see if customer's name exists. If exists, then update
-        // Burgers table with that customer's id.
+        //Burgers table with that customer's id.
         db.Customer.findOne({
             where: {
                 cust_nm: customer_name

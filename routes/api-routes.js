@@ -29,7 +29,9 @@ module.exports = function(app) {
         var customer_name = req.body.customer_name.trim();
         console.log("customer_name: '" + customer_name + "'");
         var burger_name = req.body.burger_name;
-        burger_name = burger_name.substring(2, burger_name.length);
+        var index = burger_name.indexOf(".");
+        console.log("index: " + index);
+        burger_name = burger_name.substring(index+1, burger_name.length);
         var eatenStr = burger_name + " (Eaten by " + customer_name + ")";
         console.log("eatenStr: '" + eatenStr + ";");
 

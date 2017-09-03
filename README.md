@@ -4,7 +4,7 @@ My name is Hai Nguyen. I created this application (Eat-Da-Burgers) as part of th
 
 ## Design Notes:
 
-# Couple important notes about the design of this application:
+Couple important notes about the design of this application:
 
 * There are two database tables (Customers and Burgers) required as part of this application. Because the Burgers table is belong to the Customers table (many-to-one relationship), everytime a hamburger is added, first, the app will look in the Customers table using the "UNKNOWN" customer's name in the where clause. If the row does not exist, the application will create a row in the Customers table with the cust_nm set to "UNKNOWN" and then using the unique id that is associated with the "UNKNOWN" row to create a row in the Burgers table. If the row for the "UNKNOWN" customer exists, the application will the existing id to add a row in the Burgers table. In short, everytime a hamburger is added, the application will add a row into the Burgers table with the id associated with the "UNKNOWN" customer.
 

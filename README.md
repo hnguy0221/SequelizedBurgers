@@ -2,7 +2,9 @@
 
 My name is Hai Nguyen. I created this application (Eat-Da-Burgers) as part of the homework assignment for the Full Stack Web Development class I am taking at the University of Denver. It is written in Node JavaScript, handlebars, express, and sequelize. It uses MySql database to persist the data. When the app is first launched, it displays a list hamburgers that have not been devoured on the left and the corresponding "Devour it" buttons and a list of burgers that have been devoured on the right if there are hamburgers in the database. At the bottom are the input text field which allows the user to enter a new burger to devour and the submit button. After a new burger is entered in the input text field and the submit button is clicked, the new burger will be displayed on the left with the corresponding "Devour it" button. If you click on any of the "Devour it" button, the burger will be devoured and the hamburger gets displayed to the right. Please see images below.
 
-## Design Notes: 
+## Design Notes:
+
+# Couple important notes about the design of this application:
 
 * There are two database tables (Customers and Burgers) required as part of this application. Because the Burgers table is belong to the Customers table (many-to-one relationship), everytime a hamburger is added, first, the app will look in the Customers table using the "UNKNOWN" customer's name in the where clause. If the row does not exist, the application will create a row in the Customers table with the cust_nm set to "UNKNOWN" and then using the unique id that is associated with the "UNKNOWN" row to create a row in the Burgers table. If the row for the "UNKNOWN" customer exists, the application will the existing id to add a row in the Burgers table. In short, everytime a hamburger is added, the application will add a row into the Burgers table with the id associated with the "UNKNOWN" customer.
 

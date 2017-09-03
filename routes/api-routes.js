@@ -53,10 +53,8 @@ module.exports = function(app) {
                     devoured: true,
                     burger_name: eatenStr,
                     CustomerId: cust_data.id
-                }, 
-                {
-                    where: 
-                    {
+                }, {
+                    where: {
                         id: req.body.burger_id
                     }
                 }).then(function(result) {
@@ -76,10 +74,8 @@ module.exports = function(app) {
                         devoured: true,
                         burger_name: eatenStr,
                         CustomerId: result.id
-                    }, 
-                    {
-                        where: 
-                        {
+                    }, {
+                        where: {
                             id: req.body.burger_id
                         }
                     }).then(function(result) {
@@ -100,6 +96,13 @@ module.exports = function(app) {
         if (burger_nm === "") {
             res.redirect("/");
         }
+        //everytime a hamburger is added, first, the app will look in the Customers 
+        //table using the "UNKNOWN" customer's name in the where clause. If the row 
+        //does not exist, the application will create a row in the Customers table 
+        //with the cust_nm set to "UNKNOWN" and then using the unique id that is 
+        //associated with the "UNKNOWN" row to create a row in the Burgers table. If 
+        //the row for the "UNKNOWN" customer exists, the application will use the 
+        //existing id to add a row in the Burgers table.
         db.Customer.findOne({
             where: {
                 cust_nm: "UNKNOWN"

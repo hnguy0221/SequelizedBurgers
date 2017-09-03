@@ -33,7 +33,7 @@ module.exports = function(app) {
         console.log("index: " + index);
         burger_name = burger_name.substring(index+1, burger_name.length);
         var eatenStr = burger_name + " (Eaten by " + customer_name + ")";
-        console.log("eatenStr: '" + eatenStr + ";");
+        console.log("eatenStr: '" + eatenStr + "'");
 
         //if the customer's name is empty or blank, refresh the page.
         if (customer_name === "") {

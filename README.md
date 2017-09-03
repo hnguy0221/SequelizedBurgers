@@ -8,11 +8,13 @@ My name is Hai Nguyen. I created this application (Eat-Da-Burgers) as part of th
 
 * When a hamburger is devoured (user clicks on the "Devour it" button), the user must fill in the customer's name in the text box. In this case, the application will search the customer's name in the Customers table for an id. If the id exists, the application will use that id to update the row in Burgers table. If the id does not exist, the application will create a row in the Customers table and use the newly created id to update the Burgers table.
 
-![Image of Eat-Da-Burgers application](https://github.com/hnguy0221/SequelizedBurgers/blob/master/public/assets/images/Eat-Da-Burgers.png)
+![Image of Eat-Da-Burgers application](https://github.com/hnguy0221/SequelizedBurgers/blob/master/public/assets/images/Eat-Da-Burgers-2.png)
+
+![Image of Eat-Da-Burgers application](https://github.com/hnguy0221/SequelizedBurgers/blob/master/public/assets/images/Eat-Da-Burgers-1.png)
 
 If there are no hamburgers in the database, the application is displayed like the one below:
 
-![Image of Eat-Da-Burgers application](https://github.com/hnguy0221/SequelizedBurgers/blob/master/public/assets/images/Eat-Da-Burgers.png)
+![Image of Eat-Da-Burgers application](https://github.com/hnguy0221/SequelizedBurgers/blob/master/public/assets/images/Eat-Da-Burgers-No-Data.png)
 
 * Live Demo: <https://guarded-brushlands-49347.herokuapp.com/>
 

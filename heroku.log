@@ -1,0 +1,52 @@
+2017-09-06T18:06:31.369908+00:00 app[api]: Release v2 created by user hnguy0221@gmail.com
+2017-09-06T18:06:31.191188+00:00 app[api]: Release v1 created by user hnguy0221@gmail.com
+2017-09-06T18:06:31.369908+00:00 app[api]: Enable Logplex by user hnguy0221@gmail.com
+2017-09-06T18:06:31.191188+00:00 app[api]: Initial release by user hnguy0221@gmail.com
+2017-09-06T18:07:04.000000+00:00 app[api]: Build started by user hnguy0221@gmail.com
+2017-09-06T18:07:20.807606+00:00 app[api]: Deploy 92f08174 by user hnguy0221@gmail.com
+2017-09-06T18:07:20.807606+00:00 app[api]: Release v3 created by user hnguy0221@gmail.com
+2017-09-06T18:07:20.882006+00:00 app[api]: Scaled to web@1:Free by user hnguy0221@gmail.com
+2017-09-06T18:07:23.195079+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-09-06T18:07:04.000000+00:00 app[api]: Build succeeded
+2017-09-06T18:07:26.206359+00:00 app[web.1]: 
+2017-09-06T18:07:26.206373+00:00 app[web.1]: > SequelizedBurgers@1.0.0 start /app
+2017-09-06T18:07:26.206375+00:00 app[web.1]: 
+2017-09-06T18:07:26.206374+00:00 app[web.1]: > node server.js
+2017-09-06T18:07:28.017540+00:00 app[web.1]: Unhandled rejection SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+2017-09-06T18:07:28.017551+00:00 app[web.1]:     at Utils.Promise.tap.then.catch.err (/app/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:136:19)
+2017-09-06T18:07:28.017553+00:00 app[web.1]:     at tryCatcher (/app/node_modules/bluebird/js/release/util.js:16:23)
+2017-09-06T18:07:28.017555+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/bluebird/js/release/promise.js:512:31)
+2017-09-06T18:07:28.017556+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/bluebird/js/release/promise.js:569:18)
+2017-09-06T18:07:28.017556+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/bluebird/js/release/promise.js:614:10)
+2017-09-06T18:07:28.017557+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/bluebird/js/release/promise.js:689:18)
+2017-09-06T18:07:28.017557+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/bluebird/js/release/async.js:133:16)
+2017-09-06T18:07:28.017558+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/bluebird/js/release/async.js:143:10)
+2017-09-06T18:07:28.017558+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/bluebird/js/release/async.js:17:14)
+2017-09-06T18:07:28.017560+00:00 app[web.1]:     at runCallback (timers.js:672:20)
+2017-09-06T18:07:28.017560+00:00 app[web.1]:     at tryOnImmediate (timers.js:645:5)
+2017-09-06T18:07:28.017561+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:617:5)
+2017-09-06T18:07:38.191118+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-06T18:07:38.193265+00:00 heroku[web.1]: State changed from crashed to starting
+2017-09-06T18:07:38.178953+00:00 heroku[web.1]: Process exited with status 0
+2017-09-06T18:07:39.942066+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-09-06T18:07:42.114395+00:00 app[web.1]: 
+2017-09-06T18:07:42.114409+00:00 app[web.1]: > SequelizedBurgers@1.0.0 start /app
+2017-09-06T18:07:42.114409+00:00 app[web.1]: > node server.js
+2017-09-06T18:07:42.114410+00:00 app[web.1]: 
+2017-09-06T18:07:42.827405+00:00 app[web.1]:     at tryCatcher (/app/node_modules/bluebird/js/release/util.js:16:23)
+2017-09-06T18:07:42.827409+00:00 app[web.1]:     at Async._drainQueues (/app/node_modules/bluebird/js/release/async.js:143:10)
+2017-09-06T18:07:42.827409+00:00 app[web.1]:     at Immediate.Async.drainQueues (/app/node_modules/bluebird/js/release/async.js:17:14)
+2017-09-06T18:07:42.827407+00:00 app[web.1]:     at Promise._settlePromise (/app/node_modules/bluebird/js/release/promise.js:569:18)
+2017-09-06T18:07:42.827410+00:00 app[web.1]:     at tryOnImmediate (timers.js:645:5)
+2017-09-06T18:07:42.827388+00:00 app[web.1]: Unhandled rejection SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+2017-09-06T18:07:42.827406+00:00 app[web.1]:     at Promise._settlePromiseFromHandler (/app/node_modules/bluebird/js/release/promise.js:512:31)
+2017-09-06T18:07:42.827408+00:00 app[web.1]:     at Async._drainQueue (/app/node_modules/bluebird/js/release/async.js:133:16)
+2017-09-06T18:07:42.827404+00:00 app[web.1]:     at Utils.Promise.tap.then.catch.err (/app/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:136:19)
+2017-09-06T18:07:42.827407+00:00 app[web.1]:     at Promise._settlePromise0 (/app/node_modules/bluebird/js/release/promise.js:614:10)
+2017-09-06T18:07:42.827408+00:00 app[web.1]:     at Promise._settlePromises (/app/node_modules/bluebird/js/release/promise.js:689:18)
+2017-09-06T18:07:42.827411+00:00 app[web.1]:     at processImmediate [as _immediateCallback] (timers.js:617:5)
+2017-09-06T18:07:42.827410+00:00 app[web.1]:     at runCallback (timers.js:672:20)
+2017-09-06T18:07:52.899450+00:00 heroku[web.1]: Process exited with status 0
+2017-09-06T18:07:52.914898+00:00 heroku[web.1]: State changed from starting to crashed
+2017-09-06T18:23:55.062952+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=afternoon-coast-20436.herokuapp.com request_id=f0f2bb2d-8606-4d0a-8e19-8c92f3d32501 fwd="67.190.186.142" dyno= connect= service= status=503 bytes= protocol=https
+2017-09-06T18:23:55.702590+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=afternoon-coast-20436.herokuapp.com request_id=32268888-8ccf-4b61-966d-591eb963ab42 fwd="67.190.186.142" dyno= connect= service= status=503 bytes= protocol=https

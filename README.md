@@ -18,7 +18,7 @@ If there are no hamburgers in the database, the application is displayed like th
 
 ![Image of Eat-Da-Burgers application](https://github.com/hnguy0221/SequelizedBurgers/blob/master/public/assets/images/Eat-Da-Burgers-No-Data.png)
 
-* Live Demo: <https://guarded-brushlands-49347.herokuapp.com/>
+* Live Demo: <https://afternoon-coast-20436.herokuapp.com/>
 
 ## To install the application, please follow these steps:
 
